@@ -8,7 +8,7 @@ from lightfm import LightFM
 # Import dataset
 dataset = fetch_movielens(min_rating=4.0)
 
-# Create model
+# Create model with loss function of Weighted Approximate-Rank Pairwise (warp)
 model = LightFM(loss='warp')
 model.fit(dataset['train'], epochs=30, num_threads=2)
 
