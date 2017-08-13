@@ -23,7 +23,7 @@ def sample_rec(model, data, user_ids):
 
 		top_items = dataset['item_labels'][np.argsort(-scores)]
 
-		print ('__________________________________________________________________________')
+		print ('_______________________________________________________________')
 		print ('')
 
 		print ('User {}'.format(user_id))
@@ -42,7 +42,7 @@ def sample_rec(model, data, user_ids):
 			print ('{}'.format(x))
 
 		print ('')
-		print ('__________________________________________________________________________')
+		print ('_______________________________________________________________')
 
 # Provide list of various user IDs to obtain recommendations
-sample_rec(model, dataset, [3, 25, 450, 56, 183])
+sample_rec(model, dataset, [826])
